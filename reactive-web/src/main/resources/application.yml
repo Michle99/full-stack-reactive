@@ -1,0 +1,19 @@
+oidc:
+  issuer-uri: https://dev-75048874.okta.com/oauth2/default
+  client-id: 0oa73x7ub78J3xsxk5d7
+  client-secret: oiay2fjmQ3XtOYkgD-Slv3IldqwLN68wgUxptty_
+
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          okta:
+            issuer-uri: ${oidc.issuer-uri}
+        registration:
+          okta:
+            client-id: ${oidc.client-id}
+            client-secret: ${oidc.client-secret}
+      resourceserver:
+        jwt:
+          issuer-uri: ${oidc.issuer-uri}

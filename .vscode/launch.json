@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<reactive-web>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.demo.DemoApplication",
+            "projectName": "reactive-web",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
